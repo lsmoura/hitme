@@ -1,0 +1,19 @@
+{
+  "name": "hitme",
+  "version": "1.0.0",
+  "description": "Easily handle multiple blocks of functions that should be run independent from eachother and calls a callback when everything is done.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lsmoura/hitme.git"
+  },
+  "author": "Sergio Moura <sergio@moura.us>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lsmoura/hitme/issues"
+  },
+  "homepage": "https://github.com/lsmoura/hitme#readme"
+}
