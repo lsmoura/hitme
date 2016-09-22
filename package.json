@@ -1,6 +1,6 @@
 {
   "name": "hitme",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Easily handle multiple blocks of functions that should be run independent from eachother and calls a callback when everything is done.",
   "main": "lib/index.js",
   "directories": {
