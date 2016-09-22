@@ -4,6 +4,8 @@
 
 Easily handle multiple blocks of functions that should be run independent from eachother and calls a callback when everything is done.
 
+Any errors thrown inside the functions given to the callback.
+
 ## Example
 
 ```javascript
@@ -41,6 +43,15 @@ The function returned by `hitme()`, takes only one parameter, a function. It wil
 ### hitme.serial()
 
 Calling `hitme.serial()` has the exact same behavior and parameters of the plain `hitme()`, except that it won't start to execute the next function until the previous one has called its callback.
+
+
+# Hello World
+
+```javascript
+var hitme = require('hitme');
+var caller = hitme(function(err, data) { if (err) { console.log('ERROR'); console.log(err); return; } console.log(data + ' World'); });
+caller(function(cb) { cb(null, 'Hello'); });
+```
 
 # License
 
